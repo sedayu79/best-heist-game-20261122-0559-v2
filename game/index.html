@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Midnight Vault — a stealth heist game</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #0d0b12; height: 100%; }
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: system-ui, -apple-system, sans-serif;
+  }
+  #wrap { text-align: center; }
+  canvas {
+    display: block;
+    width: 960px;
+    height: 640px;
+    background: #23202b;
+    border: 2px solid #3a3448;
+    border-radius: 8px;
+    cursor: crosshair;
+  }
+  p { color: #9a94a8; font-size: 13px; margin: 10px 0 0; }
+  p b { color: #f0ead8; }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game"></canvas>
+  <p><b>Midnight Vault</b> — sneak, grab, crack the vault, slip out the exit. WASD move, Shift sneak, E grab / crack, click toss a coin.</p>
+</div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
